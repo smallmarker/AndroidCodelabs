@@ -1,6 +1,6 @@
 ## 1\. 简介
 
-![wear_os.png](./images/Compose for Wear OS Codelab/wear_os.png)
+![wear_os.png](./images/compose_for_wear_os/wear_os.png)
 
 借助 Compose for Wear OS，您可以将您学到的有关使用 Jetpack Compose 构建应用的知识应用于穿戴式设备。
 
@@ -26,7 +26,7 @@
 
 以下是完成此 Codelab 后，您构建的应用的样子。
 
-![wear_os_scaffold.gif](./images/Compose for Wear OS Codelab/wear_os_scaffold.gif)
+![wear_os_scaffold.gif](./images/compose_for_wear_os/wear_os_scaffold.gif)
 
 ## 前提条件
 
@@ -54,7 +54,7 @@ cd compose-for-wear-os
 
 您可以通过更改工具栏中的运行配置，随时在 Android Studio 中运行其中任一模块。
 
-![studio_config.png](./images/Compose for Wear OS Codelab/studio_config.png)
+![studio_config.png](./images/compose_for_wear_os/studio_config.png)
 
 ## 在 Android Studio 中打开项目
 
@@ -63,7 +63,7 @@ cd compose-for-wear-os
 3.  Android Studio 导入项目后，请测试您可以在 Wear OS 模拟器或实体设备上运行 `start` 和 `finished` 模块。
 4.  `start` 模块应如以下屏幕截图所示。您将在其中完成所有工作。
 
-![hello_world.png](./images/Compose for Wear OS Codelab/hello_world.png)
+![hello_world.png](./images/compose_for_wear_os/hello_world.png)
 
 ## 探索起始代码
 
@@ -77,7 +77,7 @@ cd compose-for-wear-os
 
 您所做的大多数与 Wear 相关的依赖项更改都将位于顶级[架构层](https://developer.android.com/jetpack/compose/layering?hl=zh-cn)（下面红色突出显示的部分）。
 
-![material.png](./images/Compose for Wear OS Codelab/material.png)
+![material.png](./images/compose_for_wear_os/material.png)
 
 这意味着，当您以 Wear OS 为目标平台时，您已经结合 Jetpack Compose 使用过的许多依赖项不会发生变化。例如，界面、运行时、编译器和动画依赖项将保持不变。
 
@@ -280,7 +280,7 @@ fun ButtonExample(
 
 运行应用后，您应该会看到如下内容：
 
-![button.png](./images/Compose for Wear OS Codelab/button.png)
+![button.png](./images/compose_for_wear_os/button.png)
 
 这些代码您之前可能已经编写过（太棒了）。不同之处在于，您现在可以获取针对 Wear OS 优化的按钮。
 
@@ -311,7 +311,7 @@ Compose 开发者应该会非常熟悉 Text 可组合项的外观，其代码实
 
 我们来看一下它是什么样的：
 
-![text.png](./images/Compose for Wear OS Codelab/text.png)
+![text.png](./images/compose_for_wear_os/text.png)
 
 `TextExample()` 可组合函数（我们放置代码的位置）现在会在主 Material 颜色中生成 Text 可组合项。
 
@@ -319,7 +319,7 @@ Compose 开发者应该会非常熟悉 Text 可组合项的外观，其代码实
 
 Wear OS 是为圆形和非圆形设备提供字符串资源，因此，如果我们在方形模拟器上运行字符串资源，字符串将发生变化：
 
-![square_device.png](./images/Compose for Wear OS Codelab/square_device.png)
+![square_device.png](./images/compose_for_wear_os/square_device.png)
 
 目前的过程一切顺利。我们再来看看最后一个相似的可组合项 `Card`。
 
@@ -363,7 +363,7 @@ Wear 略有不同，因为有两张主卡片：[`AppCard`](https://developer.and
 
 我们来看一下它是什么样的：
 
-![appcard.png](./images/Compose for Wear OS Codelab/appcard.png)
+![appcard.png](./images/compose_for_wear_os/appcard.png)
 
 这时，您可能意识到，这些可组合项的 Compose 代码与您之前用过的代码几乎相同，这很不错吧？您可以重复利用您已获得的所有知识！
 
@@ -381,7 +381,7 @@ Chip 是一种一键式快捷操作，对屏幕空间有限的 Wear 设备尤其
 
 下面是 [`Chip`](https://developer.android.com/reference/kotlin/androidx/wear/compose/material/package-summary?hl=zh-cn#Chip(kotlin.Function0,androidx.wear.compose.material.ChipColors,androidx.compose.ui.Modifier,kotlin.Boolean,androidx.compose.foundation.layout.PaddingValues,androidx.compose.ui.graphics.Shape,androidx.compose.foundation.interaction.MutableInteractionSource,androidx.compose.ui.semantics.Role,kotlin.Function1)) 可组合函数的几种变体，您可以通过它们了解您可以创建什么：
 
-![chip.png](./images/Compose for Wear OS Codelab/chip.png)
+![chip.png](./images/compose_for_wear_os/chip.png)
 
 让我们开始编写代码吧。
 
@@ -425,7 +425,7 @@ fun ChipExample(
 
 让我们来看一下它是什么样的（注意向下滚动）：
 
-![self_Improvement.png](./images/Compose for Wear OS Codelab/self_Improvement.png)
+![self_Improvement.png](./images/compose_for_wear_os/self_Improvement.png)
 
 我们来看一下 `Toggle` 的一个变体，即 `ToggleChip` 可组合项。
 
@@ -433,7 +433,7 @@ fun ChipExample(
 
 [`ToggleChip`](https://developer.android.com/reference/kotlin/androidx/wear/compose/material/package-summary?hl=zh-cn#ToggleChip(kotlin.Boolean,kotlin.Function1,kotlin.Function1,kotlin.Function0,androidx.compose.ui.Modifier,kotlin.Function1,kotlin.Function1,androidx.wear.compose.material.ToggleChipColors,kotlin.Boolean,androidx.compose.foundation.interaction.MutableInteractionSource,androidx.compose.foundation.layout.PaddingValues,androidx.compose.ui.graphics.Shape)) 与 `Chip` 类似，但可使用户与单选按钮、切换开关或复选框进行交互。
 
-![toggle_chip.png](./images/Compose for Wear OS Codelab/toggle_chip.png)
+![toggle_chip.png](./images/compose_for_wear_os/toggle_chip.png)
 
 在 `ReusableComponents.kt` 中，搜索“**`TODO: Create a ToggleChip`**”并将当前的可组合方法替换为以下代码。
 
@@ -483,7 +483,7 @@ fun ToggleChipExample(modifier: Modifier = Modifier) {
 
 我们来看一下它是什么样的：
 
-![toogle_chip_text.png](./images/Compose for Wear OS Codelab/toogle_chip_text.png)
+![toogle_chip_text.png](./images/compose_for_wear_os/toogle_chip_text.png)
 
 现在，您已经看到了许多特定于 Wear OS 的可组合项，并且如前所述，大多数代码与您之前编写的代码几乎相同。
 
@@ -499,13 +499,13 @@ fun ToggleChipExample(modifier: Modifier = Modifier) {
 
 下面是一个演示：
 
-![LazyColumn.gif](./images/Compose for Wear OS Codelab/LazyColumn.gif)
+![LazyColumn.gif](./images/compose_for_wear_os/LazyColumn.gif)
 
 注意，当红色对象靠近中心位置时，会放大到完整尺寸，然后随着移开而缩小（并且变得更透明）。
 
 以下是一个来自应用的具体示例：
 
-![lazycolumn_example.gif](./images/Compose for Wear OS Codelab/lazycolumn_example.gif)
+![lazycolumn_example.gif](./images/compose_for_wear_os/lazycolumn_example.gif)
 
 我们发现这确实有助于提高可读性。
 
@@ -544,7 +544,7 @@ ScalingLazyColumn(
 
 大功告成！我们来看一下它是什么样的：
 
-![lazycolumn_complete.png](./images/Compose for Wear OS Codelab/lazycolumn_complete.png)
+![lazycolumn_complete.png](./images/compose_for_wear_os/lazycolumn_complete.png)
 
 当您滚动屏幕时，可以看到内容已缩放，且透明度在屏幕的顶部和底部经过调整，只需执行极少工作即可完成迁移！
 
@@ -560,7 +560,7 @@ ScalingLazyColumn(
 
 这些信息大致是这样显示的：
 
-| ![time_text.png](./images/Compose for Wear OS Codelab/time_text.png) | ![vignette.png](./images/Compose for Wear OS Codelab/vignette.png) | ![positionIndicator.png](./images/Compose for Wear OS Codelab/PositionIndicator.png) | ![PageIndicator.png](./images/Compose for Wear OS Codelab/PageIndicator.png) |
+| ![time_text.png](./images/compose_for_wear_os/time_text.png) | ![vignette.png](./images/compose_for_wear_os/vignette.png) | ![positionIndicator.png](./images/compose_for_wear_os/PositionIndicator.png) | ![PageIndicator.png](./images/compose_for_wear_os/PageIndicator.png) |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | [`TimeText`](https://developer.android.com/reference/kotlin/androidx/wear/compose/material/package-summary?hl=zh-cn#TimeText(androidx.compose.ui.Modifier,androidx.wear.compose.material.TimeSource,androidx.compose.ui.text.TextStyle,androidx.compose.foundation.layout.PaddingValues,kotlin.Function0,kotlin.Function1,kotlin.Function0,kotlin.Function1,kotlin.Function0,kotlin.Function1)) | [`Vignette`](https://developer.android.com/reference/kotlin/androidx/wear/compose/material/package-summary?hl=zh-cn#Vignette(androidx.wear.compose.material.VignettePosition,androidx.compose.ui.Modifier)) | [`PositionIndicator`](https://developer.android.com/reference/kotlin/androidx/wear/compose/material/package-summary?hl=zh-cn#PositionIndicator(androidx.compose.foundation.ScrollState,androidx.compose.ui.Modifier,kotlin.Boolean)) | [`PageIndicator`](https://developer.android.google.cn/reference/kotlin/androidx/wear/compose/material/package-summary?hl=zh-cn#HorizontalPageIndicator(androidx.wear.compose.material.PageIndicatorState,androidx.compose.ui.Modifier,androidx.wear.compose.material.PageIndicatorStyle,androidx.compose.ui.graphics.Color,androidx.compose.ui.graphics.Color,androidx.compose.ui.unit.Dp,androidx.compose.ui.unit.Dp,androidx.compose.ui.graphics.Shape)) |
 
@@ -596,7 +596,7 @@ Scaffold(
 
 我们先运行该代码。您应会看到类似下图的内容：
 
-![round_device.png](./images/Compose for Wear OS Codelab/round_device.png)
+![round_device.png](./images/compose_for_wear_os/round_device.png)
 
 请注意，它与之前添加 Scaffold 的行为没有任何实际区别，但一旦开始实现组件，就会发生变化。
 
@@ -608,7 +608,7 @@ Scaffold(
 
 在应用中任何屏幕的顶部，[Material 准则都要求您显示时间](https://developer.android.com/training/wearables/design/overlays?hl=zh-cn#time)。看起来应如下所示：
 
-![play_list.png](./images/Compose for Wear OS Codelab/play_list.png)
+![play_list.png](./images/compose_for_wear_os/play_list.png)
 
 添加 `TimeText` 实际上很简单。
 
@@ -628,7 +628,7 @@ timeText = {
 
 请尝试运行它。现在，您应该可以看到时间；如果滚动，时间将淡出。
 
-![time_text_1.png](./images/Compose for Wear OS Codelab/time_text_1.png)
+![time_text_1.png](./images/compose_for_wear_os/time_text_1.png)
 
 接下来，我们将介绍 `Vignette`。
 
@@ -640,7 +640,7 @@ timeText = {
 
 示例如下：
 
-![vignette_1.png](./images/Compose for Wear OS Codelab/vignette_1.png)
+![vignette_1.png](./images/compose_for_wear_os/vignette_1.png)
 
 我们只有一个屏幕（可滚动屏幕），所以我们希望展示此晕影效果，以提高可读性。现在我们就开始吧。
 
@@ -658,7 +658,7 @@ vignette = {
 
 如需详细了解何时应该以及不应该展示晕影效果，请阅读相关评论。在本例中，我们希望始终显示晕影效果，并且希望对屏幕的顶部和底部进行模糊处理。
 
-![vignette_2.png](./images/Compose for Wear OS Codelab/vignette_2.png)
+![vignette_2.png](./images/compose_for_wear_os/vignette_2.png)
 
 查看顶部或底部（尤其是在紫色可组合项上）时，您应该会看到效果。
 
@@ -670,7 +670,7 @@ vignette = {
 
 示例如下：
 
-![positionIndicator_1.png](./images/Compose for Wear OS Codelab/positionIndicator_1.png)
+![positionIndicator_1.png](./images/compose_for_wear_os/positionIndicator_1.png)
 
 您可能会好奇，为什么位置指示器需要处于 `Scaffold` 级别，而不是 `ScalingLazyColumn` 级别。
 
@@ -678,11 +678,11 @@ vignette = {
 
 例如，在下方应用中，我们可以假设“Playlist”可组合项不在可滚动的区域内。位置指示器位于 `ScalingLazyColumn` 中央，但未占据整个屏幕。因此，您会发现位置指示器大部分被截断了。
 
-![positionIndicator_2.png](./images/Compose for Wear OS Codelab/positionIndicator_2.png)
+![positionIndicator_2.png](./images/compose_for_wear_os/positionIndicator_2.png)
 
 不过，如果我们改为将位置指示器放在整个可见界面的中央（`Scaffold` 为您提供的位置），您就可以清楚地看到它。
 
-![positionIndicator_3.png](./images/Compose for Wear OS Codelab/positionIndicator_3.png)
+![positionIndicator_3.png](./images/compose_for_wear_os/positionIndicator_3.png)
 
 这表明 `PositionIndicator` 需要 `ScalingLazyListState`（用于告知指示器其在滚动列表中的位置）位于 `Scaffold` 的上方。
 
@@ -712,7 +712,7 @@ positionIndicator = {
 
 现在，我们来预览一下效果如何：
 
-![positionIndicator_4.png](./images/Compose for Wear OS Codelab/positionIndicator_4.png)
+![positionIndicator_4.png](./images/compose_for_wear_os/positionIndicator_4.png)
 
 请尝试上下滚动。您应该只会在滚动时看到滚动指示器显示。
 
