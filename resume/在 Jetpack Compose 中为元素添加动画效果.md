@@ -1,6 +1,6 @@
 ## 1\. 简介
 
-![head.png](./images/compose_anim/head.png)
+![head.png](/images/compose_anim/head.png)
 
 在本 Codelab 中，您将学习如何在 Jetpack Compose 中使用一些动画 API。
 
@@ -40,7 +40,7 @@ $ git clone git@github.com:googlecodelabs/android-compose-codelabs.git
 
 在 Android Studio 中**导入** **`AnimationCodelab`** 项目。
 
-![将动画 Codelab 导入 Android Studio](./images/compose_anim/animation_codelab.png)
+![将动画 Codelab 导入 Android Studio](/images/compose_anim/animation_codelab.png)
 
 该项目包含多个模块：
 
@@ -49,11 +49,11 @@ $ git clone git@github.com:googlecodelabs/android-compose-codelabs.git
 
 请务必在运行配置的下拉菜单中选择 **`start`**。
 
-![显示已在 Android Studio 中选择 start](./images/compose_anim/animation_codelab_start.png)
+![显示已在 Android Studio 中选择 start](/images/compose_anim/animation_codelab_start.png)
 
 在下一章中，我们将处理几个动画场景。在本 Codelab 中，我们使用的每个代码段均标有 `// TODO` 注释。一个小技巧是在 Android Studio 中打开 TODO 工具窗口，然后浏览该章节的每个 TODO 注释。
 
-![Android Studio 中显示的 TODO 列表](./images/compose_anim/animation_todo.png)
+![Android Studio 中显示的 TODO 列表](/images/compose_anim/animation_todo.png)
 
 ## 3\. 为简单的值变化添加动画效果
 
@@ -61,7 +61,7 @@ $ git clone git@github.com:googlecodelabs/android-compose-codelabs.git
 
 运行 `start` 配置，然后点击顶部的“Home”和“Work”按钮，尝试切换标签页。这样操作不会真正切换标签页内容，不过您可以看到，内容的背景颜色会发生变化。
 
-| ![已选择“Home”标签页](./images/compose_anim/anim_home.png) | ![已选择“Work”标签页](./images/compose_anim/anim_work.png) |
+| ![已选择“Home”标签页](/images/compose_anim/anim_home.png) | ![已选择“Work”标签页](/images/compose_anim/anim_work.png) |
 | :--------------------------------------------------------: | ---------------------------------------------------------- |
 
 点击 TODO 工具窗口中的 **TODO 1**，了解其实现方式。它位于 `Home` 可组合项中。
@@ -80,13 +80,13 @@ val backgroundColor by animateColorAsState(if (tabPage == TabPage.Home) Purple10
 
 重新运行应用并尝试切换标签页。现在颜色变化会呈现动画效果。
 
-![在不同标签页之间切换时的颜色变化动画效果](./images/compose_anim/anim_preview.gif)
+![在不同标签页之间切换时的颜色变化动画效果](/images/compose_anim/anim_preview.gif)
 
 ## 4\. 为可见性添加动画效果
 
 如果您滚动应用内容，会发现悬浮操作按钮按照滚动方向而展开和缩小。
 
-| ![展开的 Edit 悬浮操作按钮](./images/compose_anim/anim_edit.png) | ![缩小的 Edit 悬浮操作按钮](./images/compose_anim/anim_write.png) |
+| ![展开的 Edit 悬浮操作按钮](/images/compose_anim/anim_edit.png) | ![缩小的 Edit 悬浮操作按钮](/images/compose_anim/anim_write.png) |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 
 找到 **TODO 2-1** 并查看这背后的机制。它位于 `HomeFloatingActionButton` 可组合项中。使用 `if` 语句显示或隐藏表示“EDIT”的文本。
@@ -115,13 +115,13 @@ AnimatedVisibility(extended) {
 
 现在运行应用，了解悬 FAB 如何展开和缩小。
 
-![悬浮操作 Edit 按钮动画效果](./images/compose_anim/anim_edit_preview.gif)
+![悬浮操作 Edit 按钮动画效果](/images/compose_anim/anim_edit_preview.gif)
 
 每次指定的 `Boolean` 值发生变化时，`AnimatedVisibility` 会运行其动画。默认情况下，`AnimatedVisibility` 会以淡入和展开的方式显示元素，以淡出和缩小的方式隐藏元素。此行为对于使用 FAB 的本示例而言非常适用，不过我们也可以自定义行为。
 
 尝试点击 FAB，您应该会看到一条内容为“Edit feature is not supported”的消息。它还使用 `AnimatedVisibility` 为其外观和消失添加动画效果。接下来，您将自定义此行为，使消息从顶部滑入，然后滑出顶部。
 
-![指示不支持编辑功能的消息。](./images/compose_anim/anim_visible.png)
+![指示不支持编辑功能的消息。](/images/compose_anim/anim_visible.png)
 
 找到 **TODO 2-2** 并查看 `EditMessage` 可组合项中的代码。
 
@@ -156,7 +156,7 @@ AnimatedVisibility(
 
 再次运行应用后，点击“Edit”按钮时，您可能会注意到动画效果变得更好了，但其实并不完全符合预期，这是因为 `slideInVertically` 和 `slideOutVertically` 的默认行为只使用项高度的一半。
 
-![在中途垂直滑出](./images/compose_anim/anim_slide.gif)
+![在中途垂直滑出](/images/compose_anim/anim_slide.gif)
 
 对于进入过渡：我们可以通过设置 `initialOffsetY` 参数来调整默认行为，以便使用项的完整高度来正确添加动画效果。`initialOffsetY` 应该是返回初始位置的 lambda。
 
@@ -193,7 +193,7 @@ AnimatedVisibility(
 
 再次运行应用后，我们可以看到动画效果更符合预期：
 
-![使用偏移量的滑入动画效果](./images/compose_anim/anim_slide.gif)
+![使用偏移量的滑入动画效果](/images/compose_anim/anim_slide.gif)
 
 我们可以使用 `animationSpec` 参数进一步自定义动画效果。`animationSpec` 是包括 `EnterTransition` 和 `ExitTransition` 在内的许多动画 API 的通用参数。我们可以传递各种 `AnimationSpec` 类型中的一种，以指定动画值应如何随时间变化。在本示例中，我们使用基于时长的简单 `AnimationSpec`。它可以使用 `tween` 函数创建。时长为 150 毫秒，加/减速选项为 `LinearOutSlowInEasing`。对于退出动画，我们为 `animationSpec` 参数使用相同的 `tween` 函数，但时长为 250 毫秒，加/减速选项为 `FastOutLinearInEasing`。
 
@@ -228,13 +228,13 @@ AnimatedVisibility(
 
 运行应用，然后再次点击 FAB。您可以看到，消息现在通过不同的加/减速函数和时长从顶部滑入和滑出：
 
-![“Edit feature is not supported”消息从顶部滑入的动画效果](./images/compose_anim/anim_weather.gif)
+![“Edit feature is not supported”消息从顶部滑入的动画效果](/images/compose_anim/anim_weather.gif)
 
 ## 5\. 为内容大小变化添加动画效果
 
 该应用会在内容中显示多个主题。尝试点击其中一个主题，此时系统会打开并显示该主题的正文。当正文显示或隐藏时，包含文本的卡片会展开或缩小。
 
-| ![缩小的主题列表](./images/compose_anim/anim_topics_1.png) | ![展开的主题列表](./images/compose_anim/anim_topics_2.png) |
+| ![缩小的主题列表](/images/compose_anim/anim_topics_1.png) | ![展开的主题列表](/images/compose_anim/anim_topics_2.png) |
 | ---------------------------------------------------------- | ---------------------------------------------------------- |
 
 查看 `TopicRow` 可组合项中 **TODO 3** 的代码。
@@ -274,7 +274,7 @@ Column(
 
 在本示例中，我们自定义了标签页指示器。它是当前所选标签页上显示的一个矩形。
 
-| ![已选择“Home”标签页](./images/compose_anim/transition_1.png) | ![已选择“Work”标签页](./images/compose_anim/transition_2.png) |
+| ![已选择“Home”标签页](/images/compose_anim/transition_1.png) | ![已选择“Work”标签页](/images/compose_anim/transition_2.png) |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 
 在 `HomeTabIndicator` 可组合项中找到 **TODO 4**，查看标签页指示器的实现方式。
@@ -306,7 +306,7 @@ val color by transition.animateColor(label = "Border color") { page ->
 
 现在运行应用，您会发现标签页切换现在更有趣了。点击标签页会更改 `tabPage` 状态的值，这时与 `transition` 关联的所有动画值会开始以动画方式切换至为目标状态指定的值。
 
-![“Home”标签页与“Work”标签页之间的动画效果](./images/compose_anim/transition_3.gif)
+![“Home”标签页与“Work”标签页之间的动画效果](/images/compose_anim/transition_3.gif)
 
 此外，我们可以指定 `transitionSpec` 参数来自定义动画行为。例如，我们可以让靠近目标页面的一边比另一边移动得更快来实现指示器的弹性效果。可以在 `transitionSpec` lambda 中使用 `isTransitioningTo` infix 函数来确定状态变化的方向。
 
@@ -356,19 +356,19 @@ val color by transition.animateColor(
 
 再次运行应用，并尝试切换标签页。
 
-![标签页切换的自定义弹性效果](./images/compose_anim/transition_4.gif)
+![标签页切换的自定义弹性效果](/images/compose_anim/transition_4.gif)
 
-Android Studio 支持在 Compose 预览中检查过渡效果。如需使用**动画预览**，请在预览中点击可组合项右上角的“Start Animation Preview”图标（<img src="./images/compose_anim/icon_start_anim.png" alt="9c05a5608a23b407.png" style="zoom:30%;" /> 图标），以开始交互模式。如果您找不到该图标，则应按照[此处](https://developer.android.com/jetpack/compose/tooling?hl=zh-cn#enable-experimental-features)的说明，在实验设置中启用此功能。尝试点击 `PreviewHomeTabBar` 可组合项的图标。系统随即会打开一个新的“Animations”窗格。
+Android Studio 支持在 Compose 预览中检查过渡效果。如需使用**动画预览**，请在预览中点击可组合项右上角的“Start Animation Preview”图标（<img src="/images/compose_anim/icon_start_anim.png" alt="9c05a5608a23b407.png" style="zoom:30%;" /> 图标），以开始交互模式。如果您找不到该图标，则应按照[此处](https://developer.android.com/jetpack/compose/tooling?hl=zh-cn#enable-experimental-features)的说明，在实验设置中启用此功能。尝试点击 `PreviewHomeTabBar` 可组合项的图标。系统随即会打开一个新的“Animations”窗格。
 
 您可以点击“Play”图标按钮来播放动画，也可以拖动拖动条来查看各个动画帧。为了更好地描述动画值，可在 `updateTransition` 和 `animate*` 方法中指定 `label` 参数。
 
-![在 Android Studio 中使用拖动条查看动画](./images/compose_anim/transition_5.gif)
+![在 Android Studio 中使用拖动条查看动画](/images/compose_anim/transition_5.gif)
 
 ## 7\. 重复呈现动画效果
 
 尝试点击当前气温旁边的刷新图标按钮。应用开始加载最新天气信息（它会假装加载）。在加载完成之前，您会看到加载指示器，即一个灰色圆圈和一个条形。我们来为该指示器的 Alpha 值添加动画效果，以便更清楚地呈现该进程正在进行。
 
-![尚未添加动画效果的占位符信息卡片的静态图片。](./images/compose_anim/alpha_1.png)
+![尚未添加动画效果的占位符信息卡片的静态图片。](/images/compose_anim/alpha_1.png)
 
 在 `LoadingRow` 可组合项中找到 **TODO 5**。
 
@@ -411,7 +411,7 @@ animation = keyframes {
 
 运行应用，然后尝试点击刷新按钮。现在，您可以看到加载指示器会显示动画效果。
 
-![实现了重复动画效果的占位符内容](./images/compose_anim/alpha_2.gif)
+![实现了重复动画效果的占位符内容](/images/compose_anim/alpha_2.gif)
 
 ## 8\. 手势动画
 
@@ -579,7 +579,7 @@ private fun Modifier.swipeToDismiss(
 
 请运行应用，并尝试滑动某个任务项。您会看到该元素要么滑回默认位置，要么滑开，然后被移除，具体取决于快速滑动的速度。您还可以在添加动画效果时捕获元素。
 
-![滑动以移除任务项的手势动画](./images/compose_anim/anim_tasks.png)
+![滑动以移除任务项的手势动画](/images/compose_anim/anim_tasks.png)
 
 ## 9\. 结尾
 

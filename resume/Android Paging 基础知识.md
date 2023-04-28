@@ -9,7 +9,7 @@
 
 在此 Codelab 中，您将从一个示例应用开始构建，该应用中会显示一个报道列表。该列表是静态的，其中包含 500 篇报道，并且所有报道都保存在手机内存中：
 
-![paging.png](./images/paging_basic/paging.png)
+![paging.png](/images/paging_basic/paging.png)
 
 学完此 Codelab 后，您将：
 
@@ -24,7 +24,7 @@
 
 以下是最终界面的简要预览：
 
-![paging_preview.gif](./images/paging_basic/paging_preview.gif)
+![paging_preview.gif](/images/paging_basic/paging_preview.gif)
 
 ## **所需条件**
 
@@ -54,7 +54,7 @@
 1.  在 Android Studio 中的 `basic/start` 目录中打开项目。
 2.  在设备或模拟器上运行 **`app`** 运行配置。
 
-![app_config.png](./images/paging_basic/app_config.png)
+![app_config.png](/images/paging_basic/app_config.png)
 
 我们应该可以看到一个报道列表！滚动到列表底部，确认列表是静态的，换句话说，当我们到达列表末尾时，系统不会提取更多项。滚动回顶部，验证是否所有项仍在列表中。
 
@@ -74,7 +74,7 @@ Paging 库的核心组件如下：
 +   **`PagingData`** - 用于存储分页数据的容器。每次数据刷新都会有一个相应的单独 `PagingData` 发送，并由其自己的 `PagingSource` 提供支持。
 +   **`PagingDataAdapter`** - 用于在 `RecyclerView` 中呈现 `PagingData` 的 `RecyclerView.Adapter` 子类。`PagingDataAdapter` 可以使用工厂方法连接到 Kotlin `Flow`、`LiveData`、RxJava `Flowable`、RxJava `Observable` 甚至静态列表。`PagingDataAdapter` 会监听内部 `PagingData` 加载事件，并在网页加载时高效更新界面。
 
-![paging_source.jpeg](./images/paging_basic/paging_source.jpeg)
+![paging_source.jpeg](/images/paging_basic/paging_source.jpeg)
 
 在以下部分中，您将实现上述每个组件的示例。
 
@@ -478,7 +478,7 @@ private fun ActivityArticlesBinding.bindAdapter(
 
 现在，应用应能进行编译并运行。您已成功将应用迁移到 Paging 库！
 
-![paging_data.gif](./images/paging_basic/paging_data.gif)
+![paging_data.gif](/images/paging_basic/paging_data.gif)
 
 ## 10\. 在界面中显示加载状态
 
@@ -582,7 +582,7 @@ class ArticlePagingSource : PagingSource<Int, Article>() {
 
 再次运行应用并滚动到列表底部。您应该会看到，当 Paging 库提取更多项时，底部进度条会显示；当提取完成时，底部进度条会消失！
 
-![page_preview_1.gif](./images/paging_basic/page_preview_1.gif)
+![page_preview_1.gif](/images/paging_basic/page_preview_1.gif)
 
 ## 11\. 即将完成
 

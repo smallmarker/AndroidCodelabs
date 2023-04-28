@@ -33,7 +33,7 @@ Compose 测试是插桩测试。这意味着，这些测试需要在设备（物
 
 Rally 已包含一些插桩界面测试。您可以在 androidTest 源代码集中找到这些测试：
 
-![rally.png](./images/jetpack_compose_test/rally.png)
+![rally.png](/images/jetpack_compose_test/rally.png)
 
 这是用于保存新测试的目录。您可以查看 `AnimatingCircleTests.kt` 文件来了解 Compose 测试的内容。
 
@@ -51,7 +51,7 @@ debugImplementation "androidx.compose.ui:ui-test-manifest:$rootProject.composeVe
 
 我们将重点测试 Rally 的标签页栏，该栏包含一行[标签页](https://material.io/components/tabs)（“Overview”、“Accounts”和“Bills”）。此界面在实际使用场景中如下所示：
 
-![test_content.gif](./images/jetpack_compose_test/test_content.gif)
+![test_content.gif](/images/jetpack_compose_test/test_content.gif)
 
 在此 Codelab 中，您将测试该栏的界面。
 
@@ -170,7 +170,7 @@ class TopAppBarTest {
 
 我们还添加了一个 `sleep()`，让您了解到底发生了什么。右键点击 `rallyTopAppBarTest`，然后点击“Run rallyTopAppBarTest()”。
 
-![app_bar_test.png](./images/jetpack_compose_test/app_bar_test.png)
+![app_bar_test.png](/images/jetpack_compose_test/app_bar_test.png)
 
 该测试显示了顶部应用栏（5 秒钟），但它与我们的预期不同：它使用的是浅色主题！
 
@@ -188,7 +188,7 @@ composeTestRule{.finder}{.assertion}{.action}
 
 在此测试中，您将查找“Accounts”一词，以验证是否显示了处于选中状态的标签页的标签。
 
-![app_bar_account.png](./images/jetpack_compose_test/app_bar_account.png)
+![app_bar_account.png](/images/jetpack_compose_test/app_bar_account.png)
 
 如需了解有哪些工具可用，建议您参阅 [Compose 测试备忘单](https://developer.android.com/jetpack/compose/testing-cheatsheet?hl=zh-cn)或[测试软件包参考文档](https://developer.android.com/reference/kotlin/androidx/compose/ui/test/package-summary?hl=zh-cn)。查找在此测试的情况下可能有帮助的查找器和断言。例如：`onNodeWithText`、`onNodeWithContentDescription`、`isSelected`、`hasContentDescription`、`assertIsSelected`...
 
@@ -224,7 +224,7 @@ fun rallyTopAppBarTest_currentTabSelected() {
 
 现在再次运行测试，这次测试应该会通过：
 
-![compose_run.png](./images/jetpack_compose_test/compose_run.png)
+![compose_run.png](/images/jetpack_compose_test/compose_run.png)
 
 **恭喜**！您已成功编写您的第一项 Compose 测试。在此过程中，您了解了如何进行隔离测试，以及如何使用查找器和断言。
 
@@ -234,7 +234,7 @@ fun rallyTopAppBarTest_currentTabSelected() {
 
 在以下步骤中，您将验证是否显示了当前标签页的标签（它全部使用大写）。
 
-![account_test.png](./images/jetpack_compose_test/account_test.png)
+![account_test.png](/images/jetpack_compose_test/account_test.png)
 
 一种可能的解决方法是尝试查找标签的文本并断言其存在：
 
@@ -261,7 +261,7 @@ fun rallyTopAppBarTest_currentLabelExists() {
 
 不过，如果您运行该测试，结果会失败 😱
 
-![account_run.png](./images/jetpack_compose_test/account_run.png)
+![account_run.png](/images/jetpack_compose_test/account_run.png)
 
 在以下步骤中，您将了解如何使用语义树对该测试进行调试。
 
@@ -359,7 +359,7 @@ fun rallyTopAppBarTest_currentLabelExists() {
 }
 ```
 
-![test_rule.png](./images/jetpack_compose_test/test_rule.png)
+![test_rule.png](/images/jetpack_compose_test/test_rule.png)
 
 恭喜！您已修复了测试，并了解了 `ComposeTestRule`、隔离测试、查找器、断言和使用语义树进行调试。
 
@@ -371,7 +371,7 @@ fun rallyTopAppBarTest_currentLabelExists() {
 
 例如，在我们的 `TopAppBar` 中，没有必要将图标和标签作为不同的节点。我们来看看“Overview”节点：
 
-![selectable.png](./images/jetpack_compose_test/selectable.png)
+![selectable.png](/images/jetpack_compose_test/selectable.png)
 
 ```auto
         |-Node #3 at (l=42.0, t=105.0, r=105.0, b=168.0)px
@@ -512,7 +512,7 @@ fun rallyTopAppBarTest_currentLabelExists() {
 
 开始运行测试：
 
-![selectable_run.png](./images/jetpack_compose_test/selectable_run.png)
+![selectable_run.png](/images/jetpack_compose_test/selectable_run.png)
 
 恭喜！您已在这一步中了解了属性合并以及合并和未合并的语义树。
 
@@ -522,7 +522,7 @@ fun rallyTopAppBarTest_currentLabelExists() {
 
 这一步我们将使用“Overview”屏幕，在应用运行时，此屏幕如下所示：
 
-![sync_page.gif](./images/jetpack_compose_test/sync_page.gif)
+![sync_page.gif](/images/jetpack_compose_test/sync_page.gif)
 
 请注意，“Alerts”卡片显示了反复闪烁的动画，吸引用户注意该元素。
 
@@ -558,7 +558,7 @@ class OverviewScreenTest {
 
 如果运行此测试，您会发现测试永远无法完成（它会在 30 秒后超时）。
 
-![sync_run.png](./images/jetpack_compose_test/sync_run.png)
+![sync_run.png](/images/jetpack_compose_test/sync_run.png)
 
 错误消息如下：
 
@@ -629,7 +629,7 @@ import androidx.compose.ui.unit.Dp
 
 如果您运行该测试，现在测试会通过：
 
-![sync_result_run.png](./images/jetpack_compose_test/sync_result_run.png)
+![sync_result_run.png](/images/jetpack_compose_test/sync_result_run.png)
 
 恭喜！您已在这一步中了解了同步以及动画对测试的影响。
 

@@ -29,7 +29,7 @@
 
 当用户要求 Google 助理使用您的应用执行任务时，Google 助理会将用户的询问与您应用的 [`shortcuts.xml`](https://developers.google.com/assistant/app/action-schema?hl=zh-cn) XML 资源中定义的与应用有关的 Action 进行匹配。
 
-![一张流程图，演示了 Google 助理如何处理与应用有关的 Action 的语音询问](./images/action_google/shortcuts.png)
+![一张流程图，演示了 Google 助理如何处理与应用有关的 Action 的语音询问](/images/action_google/shortcuts.png)
 
 **图 1.** 一张流程图，演示了 Google 助理如何处理与应用有关的 Action 的语音询问。
 
@@ -87,12 +87,12 @@ android {
 
 请按照以下步骤测试应用：
 
-1.  在 Android Studio 中，依次选择 **Run** > **Run app**，或点击工具栏中的 **Run** 图标 ![run.png](./images/action_google/run.png)。
+1.  在 Android Studio 中，依次选择 **Run** > **Run app**，或点击工具栏中的 **Run** 图标 ![run.png](/images/action_google/run.png)。
 2.  如果使用的是虚拟设备，请在 **Select Deployment Target** 对话框中，选择虚拟设备，然后点击 **OK**。虽然 Action 在搭载 Android 5（API 级别 21）的设备上能够运行，但我们推荐使用的操作系统版本为 Android 8（API 级别 26）或更高版本。
 3.  打开应用后，长按主屏幕按钮，以设置 Google 助理并验证其能否正常运行。如果您尚未登录 Google 助理，请先登录。
 4.  重新打开应用。
 
-![打开 Fit Actions 应用的手机，屏幕上显示的是锻炼统计信息。](./images/action_google/way_to_go.png)
+![打开 Fit Actions 应用的手机，屏幕上显示的是锻炼统计信息。](/images/action_google/way_to_go.png)
 
 **图 2.** 显示锻炼统计信息的 Fit Actions 示例应用。
 
