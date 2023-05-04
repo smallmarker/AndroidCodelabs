@@ -2,7 +2,7 @@
 
 [GitHub 持续更新，欢迎关注，欢迎 star ~](https://github.com/smallmarker/AndroidCodelabs)
 
-Android Codelabs 提供引导式、教程式、实践编码体验。将引导您完成构建小型应用程序或向现有应用程序添加新功能的过程。该项目将持续收集有关 Android Codelabs 相关文章，提供给感兴趣的读者进行阅读。
+Android Codelabs 提供引导式、教程式、实践编码体验。将引导您完成构建小型应用程序或向现有应用程序添加新功能的过程。该项目将持续收集并整理有关 Android Codelabs 相关文章，提供给感兴趣的读者进行阅读。
 
 ## 使用 Kotlin 进行高级 Android 开发
 
