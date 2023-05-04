@@ -4,6 +4,21 @@
 
 Android Codelabs 提供引导式、教程式、实践编码体验。将引导您完成构建小型应用程序或向现有应用程序添加新功能的过程。该项目将持续收集并整理有关 Android Codelabs 相关文章，提供给感兴趣的读者进行阅读。
 
+## Android Kotlin 基础知识
+
+“Android Kotlin 基础知识”课程由 Google Developers 培训团队设计。在本课程中，您将了解 Android Kotlin 编程概念并构建各种应用。
+
+- [第 1 课：构建首个应用]()
+- [第 2 课：布局]()
+- [第 3 课：导航]()
+- [第 4 课：activity 和 fragment 生命周期]()
+- [第 5 课：架构组件]()
+- [第 6 课：Room 数据库和协程]()
+- [第 7 课：RecyclerView]()
+- [第 8 课：连接到互联网]()
+- [第 9 课：代码库]()
+- [第 10 课：设计面向所有人的应用]()
+
 ## 使用 Kotlin 进行高级 Android 开发
 
 本课程提供了一系列 Codelab，引导您了解使用 Kotlin 构建 Android 应用的高级主题。在本课程中，您将了解高级 Android Kotlin 编程概念并构建各种应用。
