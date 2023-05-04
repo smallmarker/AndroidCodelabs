@@ -79,7 +79,7 @@ $ git clone https://github.com/googlecodelabs/android-compose-codelabs
 
 在此 Codelab 中，您需要将 [Sunflower](https://github.com/android/sunflower/tree/views) 的植物详情界面迁移到 Compose。点按植物列表界面中显示的某个植物，即可打开植物详情界面。
 
-<img src="/images/compose_migration/2.png" alt="2.png" style="zoom:50%;" />
+## <img src="/images/compose_migration/2.png" alt="2.png" style="zoom:50%;" />
 
 ## 项目设置
 
@@ -241,7 +241,7 @@ class PlantDetailFragment : Fragment() {
 
 如果您运行该应用，界面上会显示“`Hello Compose`”。
 
-<img src="/images/compose_migration/3.png" alt="3.png" style="zoom:50%;" />
+## <img src="/images/compose_migration/3.png" alt="3.png" style="zoom:50%;" />
 
 ## 6\. 使用 XML 创建可组合项
 
@@ -454,7 +454,7 @@ private fun PlantWateringPreview() {
 
 预览如下：
 
-<img src="/images/compose_migration/6.png" alt="6.png" style="zoom:50%;" />
+## <img src="/images/compose_migration/6.png" alt="6.png" style="zoom:50%;" />
 
 需要注意以下几点：
 
@@ -489,7 +489,7 @@ fun PlantDetailContent(plant: Plant) {
 
 刷新预览后，您会看到以下内容：
 
-<img src="/images/compose_migration/7.png" alt="7.png" style="zoom:50%;" />
+## <img src="/images/compose_migration/7.png" alt="7.png" style="zoom:50%;" />
 
 ## 9\. Compose 代码中的 View
 
@@ -572,11 +572,11 @@ private fun PlantDetailContentPreview() {
 
 预览如下：
 
-<img src="/images/compose_migration/9.png" alt="9.png" style="zoom:50%;" />
+## <img src="/images/compose_migration/9.png" alt="9.png" style="zoom:50%;" />
 
 现在，您已将原始 `ConstraintLayout` 中的所有内容迁移到 Compose。您可以运行该应用，检查其是否按预期运行。
 
-<img src="/images/compose_migration/10.gif" alt="10.gif" style="zoom:50%;" />
+## <img src="/images/compose_migration/10.gif" alt="10.gif" style="zoom:50%;" />
 
 ## 10\. ViewCompositionStrategy
 
@@ -698,7 +698,7 @@ private fun PlantDescriptionPreview() {
 
 在预览中您可以看到，`MdcTheme` 会从 `styles.xml` 文件中的主题中提取颜色。
 
-<img src="/images/compose_migration/11.png" alt="11.png" style="zoom:50%;" />
+## <img src="/images/compose_migration/11.png" alt="11.png" style="zoom:50%;" />
 
 您还可以在深色主题中预览界面，方法是创建新函数并将 `Configuration.UI_MODE_NIGHT_YES` 传递给预览的 `uiMode`：
 
@@ -718,11 +718,11 @@ private fun PlantDetailContentDarkPreview() {
 
 预览如下：
 
-<img src="/images/compose_migration/12.png" alt="12.png" style="zoom:80%;" />
+## <img src="/images/compose_migration/12.png" alt="12.png" style="zoom:80%;" />
 
 如果您运行应用，它在浅色主题和深色主题下的行为都将与迁移前完全相同：
 
-<img src="/images/compose_migration/13.gif" alt="13.gif" style="zoom:50%;" />
+## <img src="/images/compose_migration/13.gif" alt="13.gif" style="zoom:50%;" />
 
 ## 12\. 测试
 
