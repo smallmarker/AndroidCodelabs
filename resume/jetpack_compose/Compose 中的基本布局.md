@@ -52,7 +52,7 @@ $ git clone https://github.com/googlecodelabs/android-compose-codelabs
 
 下面我们来详细了解一下设计：
 
-<img src="/images/compose_layout/2.png" alt="2.png" style="zoom:50%;" />
+## <img src="/images/compose_layout/2.png" alt="2.png" style="zoom:50%;" />
 
 在需要实现设计时，最好先清楚了解其结构。不要立即开始编码，而应**分析设计本身**。如何**将此界面拆分为多个可重复利用的部分**？
 
@@ -61,7 +61,7 @@ $ git clone https://github.com/googlecodelabs/android-compose-codelabs
 +   屏幕上的内容。
 +   底部导航栏。
 
-<img src="/images/compose_layout/3.png" alt="3.png" style="zoom:50%;" />
+## <img src="/images/compose_layout/3.png" alt="3.png" style="zoom:50%;" />
 
 展开细目后，您可以看到屏幕内容包含三个子部分：
 
@@ -69,17 +69,17 @@ $ git clone https://github.com/googlecodelabs/android-compose-codelabs
 +   “Align your body”版块。
 +   “Favorite collections”版块。
 
-<img src="/images/compose_layout/4.png" alt="4.png" style="zoom:50%;" />
+## <img src="/images/compose_layout/4.png" alt="4.png" style="zoom:50%;" />
 
 在每个版块中，您还可以看到一些可重复利用的较低级别组件：
 
 +   “align your body”元素，显示在可水平滚动的行中。
 
-<img src="/images/compose_layout/5.png" alt="5.png" style="zoom:50%;" />
+## <img src="/images/compose_layout/5.png" alt="5.png" style="zoom:50%;" />
 
 +   “favorite collection”卡片，显示在可水平滚动的网格中。
 
-<img src="/images/compose_layout/6.png" alt="6.png" style="zoom:50%;" />
+## <img src="/images/compose_layout/6.png" alt="6.png" style="zoom:50%;" />
 
 现在，您已经分析了设计，接下来可以开始为每个已确定的界面部分实现可组合项。先从最低级别的可组合项着手，然后继续将它们组合成更复杂的可组合项。完成此 Codelab 后，您的新应用将与所提供的设计相似。
 
@@ -87,11 +87,11 @@ $ git clone https://github.com/googlecodelabs/android-compose-codelabs
 
 第一个要转换为可组合项的元素是搜索栏。我们再来看一下设计：
 
-<img src="/images/compose_layout/7.png" alt="7.png" style="zoom:50%;" />
+## <img src="/images/compose_layout/7.png" alt="7.png" style="zoom:50%;" />
 
 只通过上面的屏幕截图，很难在实现该设计时让像素完美呈现。通常情况下，设计人员应传达更多关于设计的信息。他们可以授权您访问他们的设计工具，或分享所谓的用红线标注的设计。在此示例中，我们的设计人员提交了用红线标注的设计，方便您读出任何尺寸值。该设计采用 8dp 网格叠加层的方式显示，以便您轻松查看各个元素之间和周围的空间大小。此外，还明确添加了一些间距，以阐明特定尺寸。
 
-<img src="/images/compose_layout/8.png" alt="8.png" style="zoom:50%;" />
+## <img src="/images/compose_layout/8.png" alt="8.png" style="zoom:50%;" />
 
 您可以看到，搜索栏的高度应为 56 密度无关像素。它还应填充其父项的全宽。
 
@@ -124,7 +124,7 @@ fun SearchBar(
 
 我们来看一看此可组合项的预览。请注意，您可以使用 Android Studio 中的[预览功能](https://developer.android.com/jetpack/compose/tooling?hl=zh-cn#preview)快速迭代各个可组合项。`MainActivity.kt` 包含您要在此 Codelab 中构建的所有可组合项的预览。在此示例中，`SearchBarPreview` 方法会渲染我们的 `SearchBar` 可组合项，并提供一些背景和内边距，以便提供更多上下文。完成您刚才添加的实现后，预览应如下所示：
 
-<img src="/images/compose_layout/9.png" alt="9.png" style="zoom:50%;" />
+## <img src="/images/compose_layout/9.png" alt="9.png" style="zoom:50%;" />
 
 不过，还缺少一些内容。首先，我们使用[修饰符](https://developer.android.com/jetpack/compose/modifiers?hl=zh-cn)修正可组合项的尺寸。
 
@@ -162,7 +162,7 @@ fun SearchBar(
 
 您还必须设置 `TextField` 的一些形参。您可以试着设置形参值，以使可组合项类似于设计。同样，以下设计供您参考：
 
-<img src="/images/compose_layout/10.png" alt="10.png" style="zoom:50%;" />
+## <img src="/images/compose_layout/10.png" alt="10.png" style="zoom:50%;" />
 
 更新实现时应采取以下步骤：
 
@@ -223,7 +223,7 @@ fun SearchBar(
 
 接下来，您要实现的可组合项是“Align your body”元素。我们来看看该元素的设计，包括它旁边的红线设计：
 
-<img src="/images/compose_layout/11.png" alt="11.png" style="zoom:30%;" /> <img src="/images/compose_layout/11_2.png" alt="11_2.png" style="zoom:82%;" />
+## <img src="/images/compose_layout/11.png" alt="11.png" style="zoom:30%;" /> <img src="/images/compose_layout/11_2.png" alt="11_2.png" style="zoom:82%;" />
 
 红线设计现在还包含面向基线的间距。以下是我们从中获得的信息：
 
@@ -266,7 +266,7 @@ fun AlignYourBodyElement(
 
 查看此可组合项的预览：
 
-<img src="/images/compose_layout/12.png" alt="12.png" style="zoom:50%;" />
+## <img src="/images/compose_layout/12.png" alt="12.png" style="zoom:50%;" />
 
 您需要进行一些改进。最值得注意的是，图片过大，且形状不是圆形。您可以使用 [`size`](https://developer.android.com/reference/kotlin/androidx/compose/foundation/layout/package-summary?hl=zh-cn#(androidx.compose.ui.Modifier).size(androidx.compose.ui.unit.Dp)) 和 [`clip`](https://developer.android.com/reference/kotlin/androidx/compose/ui/draw/package-summary?hl=zh-cn#(androidx.compose.ui.Modifier).clip(androidx.compose.ui.graphics.Shape)) 修饰符以及 `contentScale` 形参调整 `Image` 可组合项。
 
@@ -455,7 +455,7 @@ fun FavoriteCollectionCard(
 
 我们来看一下此实现的预览：
 
-<img src="/images/compose_layout/16.png" alt="16.png" style="zoom:50%;" />
+## <img src="/images/compose_layout/16.png" alt="16.png" style="zoom:50%;" />
 
 接下来，运用在上一步中学到的经验。设置图片尺寸，然后在容器中对其进行剪裁。设置 `Row` 的宽度，并与其子项垂直对齐。先尝试自行实施这些更改，然后再查看解决方案代码！
 
@@ -626,7 +626,7 @@ fun AlignYourBodyRow(
 
 现在，设计如下所示：
 
-<img src="/images/compose_layout/23.png" alt="23.png" style="zoom:50%;" />
+## <img src="/images/compose_layout/23.png" alt="23.png" style="zoom:50%;" />
 
 此外，您需要在 `LazyRow` 两侧添加一定尺寸的内边距。在此示例中，添加一个简单的内边距修饰符并不能达到目的。请尝试向 `LazyRow` 添加内边距，看看其行为方式：
 
@@ -686,7 +686,7 @@ fun FavoriteCollectionsGrid(
 
 不过，这样还无法得到正确的结果：
 
-<img src="/images/compose_layout/26.png" alt="26.png" style="zoom:50%;" />
+## <img src="/images/compose_layout/26.png" alt="26.png" style="zoom:50%;" />
 
 网格占用的空间与其父项相同，这意味着，“favorite collection”卡片会在垂直方向被过度拉伸。调整可组合项，以便网格单元的大小以及各单元之间的间距正确无误。
 
@@ -718,7 +718,7 @@ fun FavoriteCollectionsGrid(
 
 在 MySoothe 主屏幕中，有多个**版块**都遵循同一模式。每个版块都有一个标题，其中包含的内容因版块而异。我们想要实现的设计如下所示：
 
-<img src="/images/compose_layout/27.png" alt="27.png" style="zoom:50%;" />
+## <img src="/images/compose_layout/27.png" alt="27.png" style="zoom:50%;" />
 
 如您所见，每个版块都有一个**标题**和一个**槽位**。标题包含一些与其相关的间距和样式信息。可以使用不同的内容动态填充槽位，具体取决于版块。
 
@@ -754,7 +754,7 @@ fun HomeSectionPreview() {
 
 我们来看一下这个版块采用该实现后的效果：
 
-<img src="/images/compose_layout/28.png" alt="28.png" style="zoom:50%;" />
+## <img src="/images/compose_layout/28.png" alt="28.png" style="zoom:50%;" />
 
 Text 可组合项需要更多信息才能与设计保持一致。更新该可组合项，以便它：
 
@@ -791,7 +791,7 @@ fun HomeSection(
 
 您尝试实现的设计如下所示：
 
-<img src="/images/compose_layout/29.png" alt="29.png" style="zoom:50%;" />
+## <img src="/images/compose_layout/29.png" alt="29.png" style="zoom:50%;" />
 
 只需依序放置搜索栏和这两个版块。您需要添加一定尺寸的间距，以确保一切都契合设计。我们之前没有使用过 [`Spacer`](https://developer.android.com/reference/kotlin/androidx/compose/foundation/layout/package-summary?hl=zh-cn#Spacer(androidx.compose.ui.Modifier)) 可组合项，它可帮助我们在 `Column` 中添加额外的间距。如果您改为设置 `Column` 的内边距，便会看到之前在“Favorite Collections”网格中出现的相同截断行为。
 
@@ -859,7 +859,7 @@ fun ScreenContentPreview() {
 
 下面我们来看一下设计：
 
-<img src="/images/compose_layout/30.png" alt="30.png" style="zoom:50%;" />
+## <img src="/images/compose_layout/30.png" alt="30.png" style="zoom:50%;" />
 
 幸运的是，您无需自己从头开始实现整个可组合项。您可以使用 Compose Material 库中的 [`BottomNavigation`](https://developer.android.com/reference/kotlin/androidx/compose/material/package-summary?hl=zh-cn#BottomNavigation(androidx.compose.ui.Modifier,androidx.compose.ui.graphics.Color,androidx.compose.ui.graphics.Color,androidx.compose.ui.unit.Dp,kotlin.Function1)) 可组合项。在 `BottomNavigation` 可组合项内，您可以添加一个或多个 [`BottomNavigationItem`](https://developer.android.com/reference/kotlin/androidx/compose/material/package-summary?hl=zh-cn#(androidx.compose.foundation.layout.RowScope).BottomNavigationItem(kotlin.Boolean,kotlin.Function0,kotlin.Function0,androidx.compose.ui.Modifier,kotlin.Boolean,kotlin.Function0,kotlin.Boolean,androidx.compose.foundation.interaction.MutableInteractionSource,androidx.compose.ui.graphics.Color,androidx.compose.ui.graphics.Color)) 元素，然后 Material 库会自动为其设置样式。
 
@@ -906,7 +906,7 @@ private fun SootheBottomNavigation(modifier: Modifier = Modifier) {
 
 此基本实现如下所示：
 
-<img src="/images/compose_layout/31.png" alt="31.png" style="zoom:50%;" />
+## <img src="/images/compose_layout/31.png" alt="31.png" style="zoom:50%;" />
 
 您应该进行一些样式调整。首先，您可以通过设置底部导航栏的 `backgroundColor` 形参来更新其背景颜色。为此，您可以使用 Material 主题中的背景颜色。通过设置背景颜色，图标和文本的颜色会自动适应主题的 `onBackground` 颜色。最终解决方案应如下所示：
 
@@ -977,7 +977,7 @@ fun MySootheApp() {
 
 您的实现现已完成！如果想要检查您实现的设计能否让像素完美呈现，可以下载下面的图片，然后将其与您自己的预览实现进行比较。
 
-<img src="/images/compose_layout/32.png" alt="32.png" style="zoom:50%;" />
+## <img src="/images/compose_layout/32.png" alt="32.png" style="zoom:50%;" />
 
 ## 13\. 结尾
 
