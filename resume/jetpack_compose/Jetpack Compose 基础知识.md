@@ -23,7 +23,7 @@ Compose 应用由可组合函数构成。可组合函数即带有 `@Composable` 
 
 您将构建一个包含初始配置屏幕和一系列动画展开项的应用：
 
-<img src="/images/compose_basic/1.gif" alt="1.gif" style="zoom:50%;" />
+## <img src="/images/compose_basic/1.gif" alt="1.gif" style="zoom:50%;" />
 
 ## 所需条件
 
@@ -33,13 +33,13 @@ Compose 应用由可组合函数构成。可组合函数即带有 `@Composable` 
 
 如需启动新的 Compose 项目，请打开 Android Studio，然后选择 **Start a new Android Studio project**，如下所示：
 
-<img src="/images/compose_basic/2.png" alt="2.png" style="zoom:40%;" />
+## <img src="/images/compose_basic/2.png" alt="2.png" style="zoom:40%;" />
 
 如果系统未显示上述界面，请依次进入 **File** > **New** > **New Project**。
 
 创建新项目时，请从可用模板中选择 **Empty Compose Activity (Material3)**。
 
-![3.png](https://developer.android.com/static/codelabs/jetpack-compose-basics/img/bff1ec24e30656ef.png?hl=zh-cn)
+## <img src="/images/compose_basic/3.png" alt="3.png" style="zoom:40%;" />
 
 点击 **Next**，然后照常配置项目，并将其命名为 **Basics Codelab**。请确保您选择的 minimumSdkVersion 至少为 API 级别 21，这是 Compose 支持的最低 API 级别。
 
@@ -168,11 +168,11 @@ private fun Greeting(name: String) {
 
 将上述代码添加到项目后，您会在 Android Studio 的右上角看到 **Build & Refresh** 按钮。点按该按钮或构建项目即可在预览中查看新更改。
 
-<img src="/images/compose_basic/5.png" alt="5.png" style="zoom:50%;" />
+## <img src="/images/compose_basic/5.png" alt="5.png" style="zoom:50%;" />
 
 您可以在预览中查看新更改：
 
-<img src="/images/compose_basic/6.png" alt="6.png" style="zoom: 67%;" />
+## <img src="/images/compose_basic/6.png" alt="6.png" style="zoom: 67%;" />
 
 您可能忽略了一个重要的细节：**文字现在是白色的**。我们是何时对此进行定义的？
 
@@ -204,7 +204,7 @@ private fun Greeting(name: String) {
 
 点击 **Build & Refresh** 即可查看新更改。
 
-<img src="/images/compose_basic/7.png" alt="7.png" style="zoom:70%;" />
+## <img src="/images/compose_basic/7.png" alt="7.png" style="zoom:70%;" />
 
 有数十种修饰符可用于实现对齐、添加动画、设置布局、使可点击或可滚动以及转换等效果。有关完整列表，请查看 [Compose 修饰符列表](https://developer.android.com/jetpack/compose/modifiers-list?hl=zh-cn)。您将在后续步骤中使用其中的部分修饰符。
 
@@ -343,7 +343,7 @@ fun MyApp(
 }
 ```
 
-<img src="/images/compose_basic/10.png" alt="10.png" style="zoom:80%;" />
+## <img src="/images/compose_basic/10.png" alt="10.png" style="zoom:80%;" />
 
 您尚未设置可组合项的尺寸，也未对可组合项的大小添加任何限制，因此每一行仅占用可能的最小空间，预览时的效果也是如此。让我们更改预览效果，以模拟小屏幕手机的常见宽度 320dp。按如下所示向 `@Preview` 注解添加 `widthDp` 参数：
 
@@ -357,11 +357,11 @@ fun DefaultPreview() {
 }
 ```
 
-<img src="/images/compose_basic/11.png" alt="11.png" style="zoom: 50%;" />
+## <img src="/images/compose_basic/11.png" alt="11.png" style="zoom: 50%;" />
 
 修饰符在 Compose 中使用得非常广泛，现在我们来练习更高级的用法：尝试使用 [`fillMaxWidth`](https://developer.android.com/reference/kotlin/androidx/compose/foundation/layout/package-summary?hl=zh-cn#(androidx.compose.ui.Modifier).fillMaxSize(kotlin.Float)) 和 [`padding`](https://developer.android.com/reference/kotlin/androidx/compose/foundation/layout/package-summary?hl=zh-cn#(androidx.compose.ui.Modifier).padding(androidx.compose.ui.unit.Dp,androidx.compose.ui.unit.Dp)) 修饰符复制以下布局。
 
-<img src="/images/compose_basic/12.png" alt="12.png" style="zoom:50%;" />
+## <img src="/images/compose_basic/12.png" alt="12.png" style="zoom:50%;" />
 
 现在，将您的代码与解决方案进行比较：
 
@@ -403,7 +403,7 @@ private fun Greeting(name: String) {
 
 接下来，您将添加一个用于展开 `Greeting` 的可点击元素，因此需要先添加对应的按钮。您的目标是要创建以下布局：
 
-<img src="/images/compose_basic/13.png" alt="13.png" style="zoom:50%;" />
+## <img src="/images/compose_basic/13.png" alt="13.png" style="zoom:50%;" />
 
 `Button` 是 material3 软件包提供的一种可组合项，它采用可组合项作为最后一个参数。由于[尾随 lambda](https://kotlinlang.org/docs/lambdas.html#passing-trailing-lambdas) 可以移到括号之外，因此您可以向按钮添加任何内容作为子级，例如 `Text`：
 
@@ -453,7 +453,7 @@ private fun Greeting(name: String) {
 
 在本部分中，您将向屏幕中添加一些互动。到目前为止，您已经创建了一些静态布局，但现在要让它们响应用户更改，以达到下面的效果：
 
-<img src="/images/compose_basic/14.gif" alt="14.gif" style="zoom:50%;" />
+## <img src="/images/compose_basic/14.gif" alt="14.gif" style="zoom:50%;" />
 
 在开始了解如何使按钮可点击以及如何调整内容大小之前，您需要在某个位置存储某个值，用于指示每项内容是否展开（即内容的**状态**）。由于我们需要为每条问候语设定这两个值之一，因此其逻辑位置位于 `Greeting` 可组合项中。我们来看看此 `expanded` 布尔值及其在代码中的使用方式：
 
@@ -539,7 +539,7 @@ ElevatedButton(
 
 如果在模拟器中运行应用，您会看到点击该按钮时，`expanded` 会切换，从而触发重组该按钮内的文本。每个 `Greeting` 都具有自己的展开状态，因为它们属于不同的界面元素。
 
-<img src="/images/compose_basic/15.gif" alt="15.gif" style="zoom:50%;" />
+## <img src="/images/compose_basic/15.gif" alt="15.gif" style="zoom:50%;" />
 
 到目前为止的代码：
 
@@ -617,7 +617,7 @@ private fun Greeting(name: String) {
 
 如果在模拟器上运行，您应该会看到每项内容均可单独展开：
 
-<img src="/images/compose_basic/16.gif" alt="16.gif" style="zoom:50%;" />
+## <img src="/images/compose_basic/16.gif" alt="16.gif" style="zoom:50%;" />
 
 ## 8\. 状态提升
 
@@ -627,7 +627,7 @@ private fun Greeting(name: String) {
 
 例如，让我们来为应用创建一个初始配置屏幕。
 
-<img src="/images/compose_basic/17.png" alt="17.png" style="zoom:50%;" />
+## <img src="/images/compose_basic/17.png" alt="17.png" style="zoom:50%;" />
 
 将以下代码添加到 `MainActivity.kt`：
 
@@ -819,7 +819,7 @@ fun OnboardingPreview() {
 
 看起来已经越来越像一个真正的应用了，非常棒！
 
-<img src="/images/compose_basic/18.gif" alt="18.gif" style="zoom:50%;" />
+## <img src="/images/compose_basic/18.gif" alt="18.gif" style="zoom:50%;" />
 
 到目前为止的完整代码：
 
@@ -992,7 +992,7 @@ private fun Greetings(
 }
 ```
 
-<img src="/images/compose_basic/19.gif" alt="19.gif" style="zoom:50%;" />
+## <img src="/images/compose_basic/19.gif" alt="19.gif" style="zoom:50%;" />
 
 ## 10\. 保留状态
 
@@ -1016,7 +1016,7 @@ private fun Greetings(
 
 在本部分中，您将使用一个低阶 API，但不用担心，它们也可以非常简单。下面我们来为已经实现的尺寸变化添加动画效果：
 
-<img src="/images/compose_basic/20.gif" alt="20.gif" style="zoom:50%;" />
+## <img src="/images/compose_basic/20.gif" alt="20.gif" style="zoom:50%;" />
 
 为此，您将使用 `animateDpAsState` 可组合项。该可组合项会返回一个 State 对象，该对象的 `value` 会被动画持续更新，直到动画播放完毕。该可组合项需要一个类型为 `Dp` 的“目标值”。
 
@@ -1088,11 +1088,11 @@ private fun Greeting(name: String) {
 
 `spring` 规范不接受任何与时间有关的参数。它仅依赖于物理属性（阻尼和刚度），使动画更自然。立即运行该应用，查看新动画的效果：
 
-<img src="/images/compose_basic/21.gif" alt="21.gif" style="zoom:50%;" />
+## <img src="/images/compose_basic/21.gif" alt="21.gif" style="zoom:50%;" />
 
 使用 `animate*AsState` 创建的任何动画都是可中断的。这意味着，如果目标值在动画播放过程中发生变化，`animate*AsState` 会重启动画并指向新值。中断在基于弹簧的动画中看起来尤其自然：
 
-<img src="/images/compose_basic/22.gif" alt="22.gif" style="zoom:50%;" />
+## <img src="/images/compose_basic/22.gif" alt="22.gif" style="zoom:50%;" />
 
 如果您想探索不同类型的动画，请尝试为 `spring` 提供不同的参数，尝试使用不同的规范（`tween`、`repeatable`）和不同的函数（`animateColorAsState` 或[不同类型的动画 API](https://developer.android.com/jetpack/compose/animation?hl=zh-cn)）。
 
@@ -1294,7 +1294,7 @@ fun BasicsCodelabTheme(
 
 下面我们构建应用来查看采用新样式的文本：
 
-<img src="/images/compose_basic/23.png" alt="23.png" style="zoom:50%;" />
+## <img src="/images/compose_basic/23.png" alt="23.png" style="zoom:50%;" />
 
 通常来说，最好是将颜色、形状和字体样式放在 `MaterialTheme` 中。例如，如果对颜色进行硬编码，将会很难实现深色模式，并且需要进行大量修正工作，而这很容易造成错误。
 
@@ -1315,7 +1315,7 @@ fun BasicsCodelabTheme(
 
 现在，预览窗口中的结果应如下所示：
 
-<img src="/images/compose_basic/24.png" alt="24.png" style="zoom:50%;" />
+## <img src="/images/compose_basic/24.png" alt="24.png" style="zoom:50%;" />
 
 ## 设置深色模式预览
 
@@ -1339,7 +1339,7 @@ fun DefaultPreview() {
 
 系统随即会添加一个深色模式的预览。
 
-<img src="/images/compose_basic/25.png" alt="25.png" style="zoom:50%;" />
+## <img src="/images/compose_basic/25.png" alt="25.png" style="zoom:50%;" />
 
 ## 微调应用的主题
 
@@ -1369,7 +1369,7 @@ private val LightColorScheme = lightColorScheme(
 
 如需查看非自适应版本的配色方案，请在 API 级别低于 31（对应引入了自适应配色的 Android S）的设备上运行您的应用。您会看到新颜色：
 
-<img src="/images/compose_basic/26.png" alt="26.png" style="zoom:50%;" />
+## <img src="/images/compose_basic/26.png" alt="26.png" style="zoom:50%;" />
 
 在 `Theme.kt` 中，定义针对深色的调色板：
 
@@ -1384,7 +1384,7 @@ private val DarkColorScheme = darkColorScheme(
 
 现在，当我们运行应用时，会看到深色的实际效果：
 
-<img src="/images/compose_basic/27.png" alt="27.png" style="zoom:50%;" />
+## <img src="/images/compose_basic/27.png" alt="27.png" style="zoom:50%;" />
 
 `Theme.kt` 的最终代码
 
@@ -1453,7 +1453,7 @@ fun BasicsCodelabTheme(
 
 在此步骤中，您将实际运用已掌握的知识，并通过几条提示来学习几个新的概念。您将创建以下内容：
 
-<img src="/images/compose_basic/28.gif" alt="28.gif" style="zoom:50%;" />
+## <img src="/images/compose_basic/28.gif" alt="28.gif" style="zoom:50%;" />
 
 ## 用图标替换按钮
 
