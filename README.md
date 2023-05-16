@@ -4,21 +4,6 @@
 
 Android Codelabs 提供引导式、教程式、实践编码体验。将引导您完成构建小型应用程序或向现有应用程序添加新功能的过程。该项目将持续收集并整理有关 Android Codelabs 相关文章，提供给感兴趣的读者进行阅读。
 
-## Android Kotlin 基础知识
-
-“Android Kotlin 基础知识”课程由 Google Developers 培训团队设计。在本课程中，您将了解 Android Kotlin 编程概念并构建各种应用。
-
-- [第 1 课：构建首个应用]()
-- [第 2 课：布局]()
-- [第 3 课：导航]()
-- [第 4 课：activity 和 fragment 生命周期]()
-- [第 5 课：架构组件]()
-- [第 6 课：Room 数据库和协程]()
-- [第 7 课：RecyclerView]()
-- [第 8 课：连接到互联网]()
-- [第 9 课：代码库]()
-- [第 10 课：设计面向所有人的应用]()
-
 ## 使用 Kotlin 进行高级 Android 开发
 
 本课程提供了一系列 Codelab，引导您了解使用 Kotlin 构建 Android 应用的高级主题。在本课程中，您将了解高级 Android Kotlin 编程概念并构建各种应用。
@@ -46,6 +31,9 @@ Jetpack 是一个由多个库组成的套件，可帮助开发者遵循最佳实
 - [Jetpack Compose Navigation](https://github.com/smallmarker/AndroidCodelabs/blob/main/resume/jetpack_compose/Jetpack%20Compose%20Navigation.md)
 - [在 Jetpack Compose 中进行测试](https://github.com/smallmarker/AndroidCodelabs/blob/main/resume/jetpack_compose/%E5%9C%A8%20Jetpack%20Compose%20%E4%B8%AD%E8%BF%9B%E8%A1%8C%E6%B5%8B%E8%AF%95.md)
 - [使用 Jetpack Compose 改进应用的无障碍功能](https://github.com/smallmarker/AndroidCodelabs/blob/main/resume/jetpack_compose/%20%E4%BD%BF%E7%94%A8%20Jetpack%20Compose%20%E6%94%B9%E8%BF%9B%E5%BA%94%E7%94%A8%E7%9A%84%E6%97%A0%E9%9A%9C%E7%A2%8D%E5%8A%9F%E8%83%BD.md)
+
+## Flutter
+一个跨平台移动应用开发框架，它可以让开发者用一套代码开发同时适配 iOS 和 Android 系统的应用。Flutter 提供了一套丰富的组件库，可以满足开发者各种应用的需求，并支持自定义组件的开发。Flutter 还具有热重载功能，开发者可以在修改代码后实时查看应用的效果，从而大大缩短开发周期。
 
 ## 其它
 - [Compose for Wear OS Codelab](https://github.com/smallmarker/AndroidCodelabs/blob/main/resume/Compose%20for%20Wear%20OS%20Codelab.md)
