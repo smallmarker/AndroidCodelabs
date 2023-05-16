@@ -18,6 +18,9 @@ Android Codelabs 提供引导式、教程式、实践编码体验。将引导您
 ## Jetpack 
 Jetpack 是一个由多个库组成的套件，可帮助开发者遵循最佳实践、减少样板代码并编写可在各种 Android 版本和设备中一致运行的代码，让开发者可将精力集中于真正重要的编码工作。
 - [Android Paging 基础知识](https://github.com/smallmarker/AndroidCodelabs/blob/main/resume/jetpack/Android%20Paging%20%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md)
+- [Android 中的数据绑定](https://developers.google.cn/codelabs/android-databinding?hl=zh-cn#0)
+- [使用 Preferences DataStore](https://developers.google.cn/codelabs/android-preferences-datastore?hl=zh-cn#0)
+- [CameraX 入门指南](https://developers.google.cn/codelabs/camerax-getting-started?hl=zh-cn#0)
 
 ## Jetpack Compose
 了解 Compose，一种用于构建原生 Android 界面的新式工具包。  
@@ -34,6 +37,12 @@ Jetpack 是一个由多个库组成的套件，可帮助开发者遵循最佳实
 
 ## Flutter
 一个跨平台移动应用开发框架，它可以让开发者用一套代码开发同时适配 iOS 和 Android 系统的应用。Flutter 提供了一套丰富的组件库，可以满足开发者各种应用的需求，并支持自定义组件的开发。Flutter 还具有热重载功能，开发者可以在修改代码后实时查看应用的效果，从而大大缩短开发周期。
+- [Flutter 基础知识](https://developers.google.cn/codelabs/mdc-101-flutter?hl=zh-cn#0)
+- [Flutter Material 高级组件](https://developers.google.cn/codelabs/mdc-104-flutter?hl=zh-cn#0)
+- [Flutter Material 结构和布局](https://developers.google.cn/codelabs/mdc-102-flutter?hl=zh-cn#0)
+- [Flutter Material 主题中的颜色、形状、高度和类型](https://developers.google.cn/codelabs/mdc-103-flutter?hl=zh-cn#0)
+- [编写您的第一款 Flutter 应用（第 1 部分）](https://developers.google.cn/codelabs/first-flutter-app-pt1?hl=zh-cn#0)
+- [编写您的第一款 Flutter 应用（第 2 部分）添加交互性和导航](https://developers.google.cn/codelabs/first-flutter-app-pt2?hl=zh-cn#0)
 
 ## 其它
 - [Compose for Wear OS Codelab](https://github.com/smallmarker/AndroidCodelabs/blob/main/resume/Compose%20for%20Wear%20OS%20Codelab.md)
