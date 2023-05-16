@@ -26,7 +26,7 @@ Android Codelabs 提供引导式、教程式、实践编码体验。将引导您
 - [第 1 课：通知](https://github.com/smallmarker/AndroidCodelabs/tree/main/resume/%E4%BD%BF%E7%94%A8%20Kotlin%20%E8%BF%9B%E8%A1%8C%E9%AB%98%E7%BA%A7%20Android%20%E5%BC%80%E5%8F%91/%E7%AC%AC%201%20%E8%AF%BE%EF%BC%9A%E9%80%9A%E7%9F%A5)
 - [第 2 课：高级图形](https://github.com/smallmarker/AndroidCodelabs/tree/main/resume/%E4%BD%BF%E7%94%A8%20Kotlin%20%E8%BF%9B%E8%A1%8C%E9%AB%98%E7%BA%A7%20Android%20%E5%BC%80%E5%8F%91/%E7%AC%AC%202%20%E8%AF%BE%EF%BC%9A%E9%AB%98%E7%BA%A7%E5%9B%BE%E5%BD%A2)
 - [第 3 课：动画](https://github.com/smallmarker/AndroidCodelabs/tree/main/resume/%E4%BD%BF%E7%94%A8%20Kotlin%20%E8%BF%9B%E8%A1%8C%E9%AB%98%E7%BA%A7%20Android%20%E5%BC%80%E5%8F%91/%E7%AC%AC%203%20%E8%AF%BE%EF%BC%9A%E5%8A%A8%E7%94%BB)
-- [第 4 课：地理位置]()
+- [第 4 课：地理位置](https://github.com/smallmarker/AndroidCodelabs/tree/main/resume/%E4%BD%BF%E7%94%A8%20Kotlin%20%E8%BF%9B%E8%A1%8C%E9%AB%98%E7%BA%A7%20Android%20%E5%BC%80%E5%8F%91/%E7%AC%AC%204%20%E8%AF%BE%EF%BC%9A%E5%9C%B0%E7%90%86%E4%BD%8D%E7%BD%AE)
 - [第 5 课：测试和依赖项注入]()
 - [第 6 课：登录]()
 
