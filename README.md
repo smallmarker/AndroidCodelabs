@@ -47,3 +47,5 @@ Jetpack 是一个由多个库组成的套件，可帮助开发者遵循最佳实
 ## 其它
 - [Compose for Wear OS Codelab](https://github.com/smallmarker/AndroidCodelabs/blob/main/resume/Compose%20for%20Wear%20OS%20Codelab.md)
 - [借助与应用有关的 Action 将 Android 应用扩展到 Google 助理](https://github.com/smallmarker/AndroidCodelabs/blob/main/resume/%E5%80%9F%E5%8A%A9%E4%B8%8E%E5%BA%94%E7%94%A8%E6%9C%89%E5%85%B3%E7%9A%84%20Action%20%E5%B0%86%20Android%20%E5%BA%94%E7%94%A8%E6%89%A9%E5%B1%95%E5%88%B0%20Google%20%E5%8A%A9%E7%90%86.md)
+- [在 Android 应用中使用 Hilt](https://developers.google.cn/codelabs/android-hilt?hl=zh-cn#0)
+- [将您的 Dagger 应用迁移到 Hilt](https://developers.google.cn/codelabs/android-dagger-to-hilt?hl=zh-cn#0)
